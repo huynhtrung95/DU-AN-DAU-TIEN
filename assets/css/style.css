@@ -37,6 +37,7 @@ body{
 /* Header */
 
 .header.fixed{
+    z-index: 1;
     position: sticky;
     /* kéo chuột tới khoảng cách top 8px sẽ stick lại */
     top:-28px;
@@ -87,4 +88,94 @@ a{
 
 }
 
+/* --------------hero-------------- */
+.main .hero{
+    padding: 56px 0 65px;
+    background: #FFFCF4;
+}
+
+.hero .body{
+    display: flex;
+}
+
+/* --------------media-block-------------- */
+/* CHIA 2 BLOCK THÀNH 2 PHẦN */
+.hero .media-block{
+    width: 48%;
+    position: relative;
+}
+
+.hero .content-block{
+    width: 52%;
+}
+
+/* CHỈNH ẢNH THEO KÍCH THƯỚC FIGMA */
+.media-block .img{
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* --------------hero-summary-------------- */
+.hero .hero-summary{
+    position: absolute;
+    bottom: 48px;
+    left: 300px;
+    width: 270px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+    /* box-sizing: content-box; */
+    padding: 24px;
+    
+    
+}
+
+.hero-summary .item{
+    display: flex;
+    align-items: center;
+       
+}
+
+/* SELECTOR */
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summary .icon{
+    width: 48px;
+    height: 48px;
+    background-color: #FFF9E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* margin: 0.4rem 1.6rem 2.2rem 0; */
+}
+.hero-summary .icon2{
+background-color: #FCEFFF;
+}
+
+.hero-summary .icon3{
+background-color: #EBEAFF;
+}
+
+.info .label{
+    color: #5F5B53;
+    font-size: 1.4rem;
+    /* font-weight: 400; */
+    line-height: 1.86;
+}
+
+.info .title{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; 
+}
+
+.hero-summary .info{
+margin-left: 16px;
+}
 
