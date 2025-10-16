@@ -13,6 +13,11 @@ body{
     
 }
 
+:root{
+    --font-heading: "Sen", sans-serif;
+    --primary-color: #ffb900;
+}
+
 .main-content{
     width: 1170px;
     /* Khi keo trinh duyet nho lai van giu khoang cach le 24px */
@@ -28,7 +33,8 @@ body{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 24.5px;
+    /* border-radius: 24.5px; */
+    border-radius: 999px;
     background: #171100;
     padding: 0px 16px;
     line-height: 50px;
@@ -105,11 +111,9 @@ a{
     position: relative;
 }
 
-.hero .content-block{
-    width: 52%;
-}
 
-/* CHỈNH ẢNH THEO KÍCH THƯỚC FIGMA */
+
+/* CHỈNH ẢNH THEO KÍCH THƯỚC FIGMA , tránh ảnh bị chiếm ko gian nếu ko đúng kích thước */
 .media-block .img{
     width: 470px;
     height: 685px;
@@ -126,9 +130,7 @@ a{
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
-    /* box-sizing: content-box; */
     padding: 24px;
-    
     
 }
 
@@ -138,7 +140,7 @@ a{
        
 }
 
-/* SELECTOR */
+/* SELECTOR */  
 .hero-summary .item + .item {
   margin-top: 22px;
 }
@@ -179,3 +181,94 @@ background-color: #EBEAFF;
 margin-left: 16px;
 }
 
+/* ------------HERO RIGHT---------- */
+.hero .content-block{
+    width: 52%;
+    padding-left: 130px;
+    padding-top: 46px;
+}
+
+.content-block .heading{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.content-block .desc{
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    margin-top: 28px;
+}
+
+.content-block .hero-cta{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+/* -----------hero-cta----------- */
+.hero-cta .btn-see{
+    min-width: 180px;
+ 
+    background-color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 64px; /* 166.667% */
+    
+}
+
+.content-block .watch-video{
+    display: flex;
+    background: #FFFCF4;
+    border: none;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.watch-video .icon-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px; 
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.watch-video .title-desc{
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 1.67;
+margin-left: 14px;
+}
+
+.desc{
+color: #5F5B53;
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 1.67; /* 166.667% */
+margin-top: 48px;
+}
+
+.hero .stats {
+  margin-top: 8px;
+}
+
+.hero .stats strong{
+    color: #171100;
+font-family: var(--font-heading);
+font-size: 4.4rem;
+font-weight: 700;
+line-height: 1.22; /* 122.727% */
+margin-right: 15px;
+}
+
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
+}
