@@ -272,3 +272,61 @@ margin-right: 15px;
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
 }
+
+/* ----------POPULAR------------ */ 
+
+/* ----popular top------- */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.polpular-left .heading-lv2{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.polpular-left .desc{
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .popular-right{
+    display: flex;
+    width: 98px;
+    justify-content: space-between;
+    /* dùng gap 18px cũng được */
+}
+
+.popular-right .btn-control{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+
+}
+
+.popular-right .btn-control:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
